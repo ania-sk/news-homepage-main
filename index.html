@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | News homepage</title>
+</head>
+<body>
+  
+  <!-- LOGO + NAVIGATION BAR-->
+  <header>
+    
+    <img id="logo-img" src="assets/images/logo.svg" alt="Logo: W."/>
+    
+    <div id="nav-menu">      
+      <nav class="nav-box">
+        <ul class="navigation-list">
+          <li class="navigation-list-item"><a href="#">Home</a></li>
+          <li class="navigation-list-item"><a href="#">New</a></li>
+          <li class="navigation-list-item"><a href="#">Popular</a></li>
+          <li class="navigation-list-item"><a href="#">Trending</a></li>
+          <li class="navigation-list-item"><a href="#">Categories</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="menu-buttons">
+      <button id="open-menu-button" class="open menu-button">
+        <img  class="menu-img" src="assets/images/icon-menu.svg"/>
+      </button>
+      <button id="close-menu-button" class="menu-button">
+        <img  class="menu-img" src="assets/images/icon-menu-close.svg"/>
+      </button>
+    </div>
+  </header>
+    
+
+  <!--END LOGO + NAVIGATION BAR-->
+
+
+  <!--MAIN CONTENT-->
+  <main>
+
+     <!--section heading-->
+    <section class="articles-conteiner">     
+
+        <picture class="main image">
+          <source media="(max-width: 660px)" srcset="assets/images/image-web-3-mobile.jpg"/>
+          <img id="main-img" src="assets/images/image-web-3-desktop.jpg" alt="Colorful wooden blocks."/>
+        </picture>
+
+      <div class="heading-content-conteiner">
+        <div class="item heading">
+          <h1 id="heading">The Bright Future of Web 3.0?</h1>
+        </div>
+
+        <div class="item paragraph">
+          <p id="paragraph">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+            But is it really fulfilling its promise?</p>                      
+        </div>  
+        
+        <div class="item button">
+          <button id="button-read-me" type="button">Read more</button>  
+        </div>
+
+      </div>
+      <!--END section heading-->
+
+      <!--section news-->
+      <div class="news-content">
+
+        <h2>New</h2>
+
+        <div class="news-box">
+          <a class="news-heading" href="#"> Hydrogen VS Electric Cars</a>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          
+        </div>
+
+        <div class="news-box">
+          <a class="news-heading" href="#">The Downsides of AI Artistry</a>
+          <p>What are the possible adverse effects of on-demand AI image generation?</p>
+          
+        </div>
+
+        <div>
+          <a class="news-heading" href="#">Is VC Funding Drying Up?</a>
+          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>          
+        </div>        
+      </div>
+      <!--END section news-->
+    </section>
+    
+    <!--section best-->
+    <section class="best-articles-conteiner">
+
+      <div class="article-box">
+        <img src="assets/images/image-retro-pcs.jpg" alt="Old fashioned computer."/>
+        <div class="article-info">
+          <h2 class="article-position">01</h2>
+          <a class="article-heading" href="#">Reviving Retro PCs</a>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>       
+      </div>
+
+      <div class="article-box">
+        <img src="assets/images/image-top-laptops.jpg" alt="Close-up of laptop keyboard."/>
+        <div class="article-info">
+          <h2 class="article-position">02</h2>
+          <a class="article-heading" href="#">Top 10 Laptops of 2022</a>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>        
+      </div>
+  
+      <div class="article-box">
+        <img src="assets/images/image-gaming-growth.jpg" alt="A hand tossing a gaming pad."/>
+        <div class="article-info">
+          <h2 class="article-position">03</h2>
+          <a class="article-heading" href="#">The Growth of Gaming</a>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+        
+      </div> 
+       <!--END section best-->
+    </section>
+  </main>  
+  <!--END MAIN CONTENT-->  
+  <script src="script.js"></script>
+</body>
+</html>
